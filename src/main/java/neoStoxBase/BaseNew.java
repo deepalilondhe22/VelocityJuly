@@ -18,9 +18,6 @@ public class BaseNew
 		 
 			driver=new ChromeDriver();
 			
-			  
-			
-			
 			driver.manage().window().maximize();
 			
 			driver.get(UtilityNew.readDatafromPropertyFile("url"));
