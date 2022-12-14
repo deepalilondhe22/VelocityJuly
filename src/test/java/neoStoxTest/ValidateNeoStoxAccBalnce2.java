@@ -92,9 +92,7 @@ public class ValidateNeoStoxAccBalnce2 extends BaseNew
   @Test(priority = 0)
   public void validateUserID() throws EncryptedDocumentException, IOException, InterruptedException 
   {
-	  Assert.assertEquals(home.getActualUserName(driver), UtilityNew.readDatafromPropertyFile("username"),"TC is failed actual and expected are not matched");
-	  
-	  
+	  Assert.assertEquals(home.getActualUserName(driver),UtilityNew.readDatafromPropertyFile("username"),"TC is failed actual and expected are not matched");
 	  
 	 // UtilityNew.screnshot(driver,home.getActualUserName(driver));
 	  
@@ -103,6 +101,7 @@ public class ValidateNeoStoxAccBalnce2 extends BaseNew
   
   @AfterMethod
   public void LogOUT() throws InterruptedException
+  
   {
 	  
 	  home.ClickLogout(driver);
@@ -114,6 +113,6 @@ public class ValidateNeoStoxAccBalnce2 extends BaseNew
   public void closeBrowser()
   {
 	  driver.close();
-	  Reporter.log("Closing Browser", true);
+	  Reporter.log("Closing Browser",true);
   }
 }
