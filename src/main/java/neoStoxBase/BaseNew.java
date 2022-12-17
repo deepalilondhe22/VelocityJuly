@@ -22,6 +22,10 @@ public class BaseNew
 			
 			driver.get(UtilityNew.readDatafromPropertyFile("url"));
 			
+			
+			
+			
+			
 			Reporter.log("Launching Browser", true);
 			
 			Thread.sleep(1000);
